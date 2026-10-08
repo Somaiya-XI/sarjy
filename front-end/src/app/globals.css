@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+  --primary: #312c52;
+  --secondary: #bc9ec5;
+  --page-padding: 34px;
+  --content-max: 1128px;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+
+  --font-display: var(--font-eng-display);
+  --font-body: var(--font-eng-body);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-padding: clamp(34px, 10.8333vw, 40px);
+  }
+}
+
+@utility page-container {
+  width: min(100% - 2 * var(--page-padding), var(--content-max));
+  margin-inline: auto;
+}
+
+@utility bg-page-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-page-start),
+    var(--color-page-end)
+  );
+}
+
+body {
+  font-family: var(--font-eng-body), sans-serif;
+}
+.glass {
+  backdrop-filter: blur(80px);
+  background: oklch(0.317 0.0673 288.22 / 0.12);
+  border: 1px solid #ffffff40;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-hover:hover {
+  background: #312c523a;
+}
+
+
+html {
+  scroll-behavior: smooth;
+
+}
