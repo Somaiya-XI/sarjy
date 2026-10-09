@@ -2,11 +2,9 @@
 
 > A voice-first assistant that helps you rediscover paintings from visual details you remember.
 
-**Live Demo:** `TODO: production URL`
+**Live Demo:** [Sarjy Site](Sarjy-frontend-ebon.vercel.app/en)
 
-**Repository:** `TODO: GitHub URL`
-
-**Walkthrough:** `TODO: Loom URL`
+**Repository:** [Sarjy Repo](https://github.com/Somaiya-XI/sarjy)
 
 ---
 
